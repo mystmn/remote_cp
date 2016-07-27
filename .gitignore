@@ -1,0 +1,8 @@
+*.txt
+*.csv
+*.exe
+/.idea/*
+/.git/*
+results/*
+helper/email.py
+helper/__pycache__*/
