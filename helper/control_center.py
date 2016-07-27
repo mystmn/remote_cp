@@ -11,10 +11,10 @@ def main_station():
         'e2': '...error occurred while transferring',
     }
 
-    file_name = ""
+    file_name = "\\"
 
-    unc_target = '' + file_name
-    unc_destination = ''
+    unc_target = '\\\' + file_name
+    unc_destination = '\\\'
     file = FileManagement()
 
     if file.confirm(unc_target):
@@ -24,7 +24,7 @@ def main_station():
         today = datetime.datetime.today()
         #  print('{}'.format(today.strftime(format)))
         folder_creation_name = unc_destination + '\\' + today.strftime(date_format)
-
+        print(folder_creation_name)
         file.create(folder_creation_name)
 
         try:
